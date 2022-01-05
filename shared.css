@@ -1,9 +1,10 @@
 body{
     margin:0;
-    font-family:"Raleway","sans-serif"
+    font-family:"Raleway","sans-serif";
+    height:100vh;
 }
 .page-logo a{
-    color:rgb(255, 255, 160);
+    color:rgb(236, 236, 71);
     font-size:1.75rem;
     padding:10px;
     text-decoration:none;
@@ -61,10 +62,13 @@ header li a:hover{
    width:2rem;
    margin-right: 1rem;
 }
-@media only  screen and (min-width:600px){
+@media only  screen and (min-width:650px){
   .page-logo a{
-      font-size:3rem;
-      color:red;
-
+      font-size:2.5rem;
+      
   }
+  header li a{
+      font-size:1.5rem;
+  }
+  
 }
