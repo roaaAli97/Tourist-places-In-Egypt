@@ -1,3 +1,6 @@
+html,body{
+    height:100%;
+}
 body{
     margin:0;
     font-family:"Raleway","sans-serif";
@@ -70,5 +73,9 @@ header li a:hover{
   header li a{
       font-size:1.5rem;
   }
-  
+  .footer img{
+      height:3rem;
+      width:3rem;
+    
+  }
 }
