@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    font-family:"Raleway","sans-serif"
+}
+.page-logo a{
+    color:rgb(255, 255, 160);
+    font-size:1.75rem;
+    padding:10px;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-family:"Oleo Script";
+    margin-right:1rem;
+    margin-left:0;
+  
+}
+.header-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 2rem;
+    position:absolute;
+    width:100%;
+    box-sizing: border-box;
+   
+}
+.link-container{
+    display:flex;
+    
+}
+ul{
+    list-style:none;
+     margin:0;
+}
+header li{
+    margin-right:0px;
+     text-align: right;
+   
+}
+header li a{
+    text-decoration: none;
+    color:rgb(245, 239, 0);
+    text-shadow:1px 1px 2px #1c1c1c;
+    font-size:1rem;
+    padding:1em;
+    border-radius:8px;
+}
+header li a:hover{
+    color:#1c1c1c;
+    background-color:rgb(245, 239, 0);
+
+}
+.footer{
+    display:flex;
+    background-color: #1c1c1c;
+    padding:1em;
+    justify-content:center
+}
+.footer img{
+   
+   height:2rem;
+   width:2rem;
+   margin-right: 1rem;
+}
+@media only  screen and (min-width:600px){
+  .page-logo a{
+      font-size:3rem;
+      color:red;
+
+  }
+}
