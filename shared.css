@@ -17,7 +17,7 @@ body{
     margin-left:0;
   
 }
-.header-container{
+header{
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +57,7 @@ header li a:hover{
     display:flex;
     background-color: #1c1c1c;
     padding:1em;
-    justify-content:center
+    justify-content:center;
 }
 .footer img{
    
