@@ -8,7 +8,7 @@ body{
 }
 .page-logo a{
     color:rgb(236, 236, 40);
-    font-size:1.75rem;
+    font-size:1.5rem;
     padding:10px;
     text-decoration:none;
     text-transform: uppercase;
@@ -17,7 +17,7 @@ body{
     margin-left:0;
   
 }
-header{
+header,.side-drawer-header{
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -26,6 +26,11 @@ header{
     width:100%;
     box-sizing: border-box;
    
+}
+.side-drawer-header{
+    justify-content: flex-end;
+    background-color: royalblue;
+    position:static
 }
 .link-container{
     display:flex;
@@ -65,7 +70,50 @@ header li a:hover{
    width:2rem;
    margin-right: 1rem;
 }
-@media only  screen and (min-width:650px){
+.main-header nav{
+    display:none;
+}
+.hamburger-icon{
+    width:2rem;
+    height:2rem;
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
+}
+.hamburger-icon span{
+  height:3px;
+  background-color: white;
+}
+aside{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color:rgb(141, 141, 218);
+    z-index:1;
+    display:none; 
+}
+aside ul{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    list-style:none;
+}
+aside li{
+    padding:1em;
+}
+aside ul a{
+    padding:1em;
+    color:rgb(219, 219, 13);
+    text-decoration:none;
+    font-size:1.5rem;
+}
+#side-drawer:target{
+  display:block;
+  
+}
+@media only  screen and (min-width:768px){
   .page-logo a{
       font-size:2.5rem;
       
@@ -77,5 +125,11 @@ header li a:hover{
       height:3rem;
       width:3rem;
     
+  }
+ .main-header nav{
+      display:flex;
+  }
+  .hamburger-icon{
+      display:none;
   }
 }
